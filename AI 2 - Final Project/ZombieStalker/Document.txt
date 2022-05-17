@@ -1,0 +1,6 @@
+AI 2 FINAL PROJECT
+TITLE - ZOMBIE STALKER
+
+Program Description:
+This program is a 2D zombie shooter. It uses grid base game world 25x15 tiles which are 32x32 pixels.
+Each Tile could represent wall or floor.  

@@ -1,0 +1,26 @@
+#include "resource.h"
+
+MainMenu MENU DISCARDABLE
+{
+	POPUP "&File"
+	{
+		MENUITEM "E&xit", MENU_FILE_ID_EXIT
+		
+	}
+	POPUP "&View"
+	{
+		MENUITEM "&Main Window", MENU_VIEW_ID_MAIN
+		MENUITEM "&Second Window", MENU_VIEW_ID_SECOND
+	}
+	POPUP "&Help"
+	{
+		MENUITEM "&About", MENU_HELP_ID_ABOUT
+	}
+}
+
+MyCursor CURSOR mycursor.cur
+
+MyIcon ICON myicon.ico
+
+StartSound WAVE ding.wav
+EndSound WAVE tada.wav

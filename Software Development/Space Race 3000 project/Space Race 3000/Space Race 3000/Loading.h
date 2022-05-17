@@ -1,0 +1,53 @@
+// LOADING.H
+
+////////////////////////////////////////////////////////////////////////////////////////////////
+// PROGRAMMED BY COLLIN MUNSON /////////////////// B E G I N N I N G ///////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////
+
+#ifndef LOADING_H
+#define LOADING_H
+
+#include "../Engine/Engine.h"
+
+class Loading : public State
+{
+	public:
+		Loading();
+
+		void Load();
+		void Close();
+
+		void OnLostDevice();
+		void OnResetDevice();
+
+		void Update(float dt);
+		void Draw();
+
+		void SetReady(bool ready);
+		void SetPercent(float percent);
+
+	private:
+		LPDIRECT3DTEXTURE9 m_loadingTexture;
+
+		int m_currentFrame;
+		RECT m_frames[8];
+		float m_frameCounter;
+
+		D3DXVECTOR2 m_vertexlist[5];
+		LPD3DXLINE m_line;
+
+		bool flash;
+
+		float m_percent;
+
+		bool m_ready;
+
+		int m_loadingAnim;
+
+};
+
+#endif
+
+////////////////////////////////////////////////////////////////////////////////////////////////
+// PROGRAMMED BY COLLIN MUNSON /////////////////// E N D I N G /////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////

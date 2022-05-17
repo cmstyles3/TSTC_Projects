@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual C++ Express 2005
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Lab03_CMM", "Lab03_CMM.vcproj", "{E49A1726-C66B-45F9-9798-EBF8DA4240F7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E49A1726-C66B-45F9-9798-EBF8DA4240F7}.Debug|Win32.ActiveCfg = Debug|Win32
+		{E49A1726-C66B-45F9-9798-EBF8DA4240F7}.Debug|Win32.Build.0 = Debug|Win32
+		{E49A1726-C66B-45F9-9798-EBF8DA4240F7}.Release|Win32.ActiveCfg = Release|Win32
+		{E49A1726-C66B-45F9-9798-EBF8DA4240F7}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

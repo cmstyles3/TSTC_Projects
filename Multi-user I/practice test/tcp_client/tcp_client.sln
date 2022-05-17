@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual C++ Express 2005
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "tcp_client", "tcp_client.vcproj", "{EC93685E-7526-4023-95C2-35FA44B539AF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EC93685E-7526-4023-95C2-35FA44B539AF}.Debug|Win32.ActiveCfg = Debug|Win32
+		{EC93685E-7526-4023-95C2-35FA44B539AF}.Debug|Win32.Build.0 = Debug|Win32
+		{EC93685E-7526-4023-95C2-35FA44B539AF}.Release|Win32.ActiveCfg = Release|Win32
+		{EC93685E-7526-4023-95C2-35FA44B539AF}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

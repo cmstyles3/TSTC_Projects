@@ -1,0 +1,9 @@
+#define BUTTON_ROLL_DICE 100
+#define BUTTON_END_TURN 200
+
+#define MainMenu 1000
+#define MENU_FILE_ID_NEW 1001
+#define MENU_FILE_ID_EXIT 1002
+#define MENU_HELP_ID_ABOUT 1003
+
+#define SOUND_ID_EXIT 2000

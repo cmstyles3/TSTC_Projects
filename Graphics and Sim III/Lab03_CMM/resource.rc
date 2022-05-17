@@ -1,0 +1,8 @@
+#include "resource.h"
+
+ICON_ID ICON icon.ico
+
+GUN_ID WAVE sounds\\gun.wav
+HIT_ID WAVE sounds\\hit.wav
+AMMO_ID WAVE sounds\\ammo.wav
+

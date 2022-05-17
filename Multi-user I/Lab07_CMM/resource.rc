@@ -1,0 +1,104 @@
+#include <winuser.h>
+#include "resource.h"
+
+//////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+AC_FTP DIALOG DISCARDABLE  0, 0, 255, 230
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Async FTP Client"
+FONT 8, "Arial Black"
+{
+    CTEXT           "Status: not connected",IDC_STATUS,130,7,116,8
+    CTEXT           "Server: none",IDC_SERVER,5,6,120,8
+    CONTROL         "",IDC_REPLY,"Static",SS_LEFTNOWORDWRAP | WS_GROUP,8,26,
+                    240,97
+	
+    GROUPBOX        "FTP Protocol Dialog",IDC_STATUS,4,16,248,108
+    GROUPBOX        "Remote Working Directory",IDC_STATUS,4,127,248,28
+    CTEXT           "--unavailable--",IDC_RPWD,11,140,162,10
+    PUSHBUTTON      "CWD",IDC_RCWD,204,135,20,16
+    PUSHBUTTON      "DEL",IDC_RDEL,228,135,20,16
+    PUSHBUTTON      "DIR",IDC_RDIR,180,135,20,16
+    CTEXT           "",IDC_DATA_RATE,5,160,245,8
+    GROUPBOX        "Local Working Directory",IDC_STATUS,5,169,248,28
+    CTEXT           "--unavailable--",IDC_LPWD,11,182,162,10
+    PUSHBUTTON      "CWD",IDC_LCWD,205,177,20,16
+    PUSHBUTTON      "DEL",IDC_LDEL,229,177,20,16
+    PUSHBUTTON      "DIR",IDC_LDIR,181,177,20,16
+    PUSHBUTTON      "Send",IDC_STOR,40,208,32,16
+    PUSHBUTTON      "Recv",IDC_RETR,76,208,32,16
+    PUSHBUTTON      "Abort",IDC_ABOR,112,208,32,16
+    PUSHBUTTON      "Close",IDC_CLOSE,148,208,32,16
+    PUSHBUTTON      "About",IDABOUT,224,200,24,12
+    PUSHBUTTON      "Options",IDC_OPTIONS,188,208,28,16
+    PUSHBUTTON      "Exit",IDC_EXIT,224,216,24,12
+    DEFPUSHBUTTON   "Connect",IDC_CONNECT,4,208,32,16
+}
+
+IDD_FILENAME DIALOG DISCARDABLE  0, 0, 147, 46
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Filename"
+FONT 8, "MS Sans Serif" 
+{
+    LTEXT           "Filename",IDC_STATIC,3,10,30,10
+    EDITTEXT        IDC_FILE,36,8,104,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "Cancel",IDCANCEL,12,28,50,14
+    DEFPUSHBUTTON   "OK",IDOK,79,28,50,14
+}
+
+IDD_SERVER DIALOG DISCARDABLE  0, 0, 139, 78
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "FTP Server Login Info"
+FONT 8, "MS Sans Serif"
+{
+    LTEXT           "Server:",IDC_STATIC,12,8,24,9
+    EDITTEXT        IDC_SERVER,40,8,96,13,ES_AUTOHSCROLL
+    LTEXT           "Username:",IDC_STATIC,4,24,36,10
+    EDITTEXT        IDC_USERNAME,40,24,96,12,ES_AUTOHSCROLL
+    LTEXT           "Password:",IDC_STATIC,4,40,33,10
+    EDITTEXT        IDC_PASSWORD,40,40,96,13,ES_PASSWORD | ES_AUTOHSCROLL
+    PUSHBUTTON      "Cancel",IDCANCEL,8,60,50,14
+    DEFPUSHBUTTON   "OK",IDOK,80,60,50,14
+}
+
+IDD_ABOUT DIALOG DISCARDABLE  75, 50, 211, 129
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "About Async FTP Client"
+FONT 8, "MS Sans Serif"
+{
+    DEFPUSHBUTTON   "OK",IDOK,152,10,50,14
+    LTEXT           "------- Async FTP Client ------   Collin Munson (c) 2007   ",
+                    IDC_STATIC,48,15,92,25
+    ICON            AC_FTP,IDC_STATIC,6,9,18,20
+    LTEXT           "< Date and Time Compiled >",IDC_COMPILEDATE,40,45,144,
+                    11
+    GROUPBOX        "WinSock DLL information",IDC_STATIC,8,60,196,66
+    LTEXT           "wVersion:",IDS_DLLVER,16,75,72,7
+    LTEXT           "HiVersion:",IDS_DLLHIVER,124,75,68,8
+    LTEXT           "MaxSockets:",IDS_MAXSOCKS,15,112,67,9
+    LTEXT           "MaxDatagram:",IDS_MAXUDP,122,112,72,9
+    LTEXT           "Description:",IDS_DESCRIP,16,87,180,8
+    LTEXT           "Status:",IDS_STATUS,16,99,180,8
+}
+
+IDD_OPTIONS DIALOG DISCARDABLE  0, 0, 127, 66
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Application Options"
+FONT 8, "MS Sans Serif"
+{
+    DEFPUSHBUTTON   "OK",IDOK,40,48,50,14
+    CONTROL         "Get to NUL",IDC_TO_NUL,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,8,8,48,9
+    CONTROL         "Beep on I/O",IDC_IOBEEP,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,68,8,52,9
+    CONTROL         "Put from NUL",IDC_FROM_NUL,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,8,20,56,8
+    CONTROL         "Log Dialog",IDC_LOGFILE,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,68,20,48,10
+    CONTROL         "WSAAsyncSelect after accept",IDC_REASYNC,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,8,32,108,9
+}
+

@@ -1,0 +1,18 @@
+#include "resources.h"
+
+MainMenu MENU DISCARDABLE
+{
+	POPUP "&FILE"
+	{
+		MENUITEM "&NEW GAME", MENU_FILE_ID_NEW
+		MENUITEM SEPARATOR
+		MENUITEM "E&XIT", MENU_FILE_ID_EXIT
+	}
+	
+	POPUP "&HELP"
+	{
+		MENUITEM "&ABOUT", MENU_HELP_ID_ABOUT
+	}
+}
+
+SOUND_ID_EXIT wave exit.wav

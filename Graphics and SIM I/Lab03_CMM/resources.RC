@@ -1,0 +1,29 @@
+#include "Resources.h"
+
+ID_SOUND1 WAVE sound1.wav 
+ID_SOUND2 WAVE sound2.wav 
+ID_SOUND3 WAVE sound3.wav 
+
+ID_ICON1 ICON icon.ico
+
+ID_CURSOR1 CURSOR cursor.cur
+
+MainMenu MENU DISCARDABLE
+{
+	POPUP "&File"
+	{
+		MENUITEM "E&xit", MENU_FILE_ID_EXIT
+	}
+	POPUP "Color Messages"
+	{
+		MENUITEM "Blue", MENU_COLORMSG_ID_BLUE
+		MENUITEM "Red", MENU_COLORMSG_ID_RED
+		MENUITEM "White", MENU_COLORMSG_ID_WHITE
+		MENUITEM "Yellow", MENU_COLORMSG_ID_YELLOW
+		MENUITEM "Green", MENU_COLORMSG_ID_GREEN
+	}
+	POPUP "HELP"
+	{
+		MENUITEM "About", MENU_HELP_ID_ABOUT
+	}
+}

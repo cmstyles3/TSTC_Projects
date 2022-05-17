@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual C++ Express 2005
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Tank Training - Final Project", "Tank Training - Final Project\Tank Training - Final Project.vcproj", "{032FD507-0686-4FD8-AA97-434026FF1EAA}"
+	ProjectSection(ProjectDependencies) = postProject
+		{D140CC8A-6D13-4C22-87EE-D81438ADB65C} = {D140CC8A-6D13-4C22-87EE-D81438ADB65C}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Engine", "Engine\Engine.vcproj", "{D140CC8A-6D13-4C22-87EE-D81438ADB65C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{032FD507-0686-4FD8-AA97-434026FF1EAA}.Debug|Win32.ActiveCfg = Debug|Win32
+		{032FD507-0686-4FD8-AA97-434026FF1EAA}.Debug|Win32.Build.0 = Debug|Win32
+		{032FD507-0686-4FD8-AA97-434026FF1EAA}.Release|Win32.ActiveCfg = Release|Win32
+		{032FD507-0686-4FD8-AA97-434026FF1EAA}.Release|Win32.Build.0 = Release|Win32
+		{D140CC8A-6D13-4C22-87EE-D81438ADB65C}.Debug|Win32.ActiveCfg = Debug|Win32
+		{D140CC8A-6D13-4C22-87EE-D81438ADB65C}.Debug|Win32.Build.0 = Debug|Win32
+		{D140CC8A-6D13-4C22-87EE-D81438ADB65C}.Release|Win32.ActiveCfg = Release|Win32
+		{D140CC8A-6D13-4C22-87EE-D81438ADB65C}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

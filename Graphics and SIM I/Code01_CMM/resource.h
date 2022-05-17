@@ -1,0 +1,5 @@
+#define MainMenu 1000
+#define MENU_FILE_ID_EXIT 2000
+#define MENU_VIEW_ID_MAIN 3000
+#define MENU_VIEW_ID_SECOND 3001
+#define MENU_HELP_ID_ABOUT 4000

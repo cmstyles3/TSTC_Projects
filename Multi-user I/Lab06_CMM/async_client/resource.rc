@@ -1,0 +1,13 @@
+#include "resource.h"
+//
+IDR_MENU1 MENU DISCARDABLE
+{
+	POPUP "File"
+	{
+		MENUITEM "Connect",                     ID_FILE_CONNECT
+        MENUITEM "Disconnect",                  ID_FILE_DISCONNECT
+        MENUITEM "Request Code",                ID_FILE_REQUESTCODE
+        MENUITEM "Decode",                      ID_FILE_DECODE
+        MENUITEM "About",                       ID_FILE_ABOUT
+	}
+}

@@ -1,0 +1,9 @@
+#include "resource.h"
+
+MainMenu MENU DISCARDABLE
+{
+	POPUP "Help"
+	{
+		MENUITEM "About", MENU_HELP_ABOUT
+	}
+}

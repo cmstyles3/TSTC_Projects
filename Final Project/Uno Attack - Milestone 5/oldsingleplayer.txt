@@ -1,0 +1,87 @@
+////else
+			//{
+			//	bool played = false;
+			//	for (int i = 0; i < m_computersHand.GetNumCards(); i++)
+			//	{
+			//		if (m_topCard.color == m_computersHand.GetCard(i).color ||
+			//			m_topCard.type == m_computersHand.GetCard(i).type)
+			//		{
+			//			m_topCard = m_computersHand.GetCard(i);
+			//			m_computersHand.RemoveCard(i);
+
+			//			if (m_topCard.type == DISCARD_ALL)
+			//			{
+			//				for (int i = 0; i < m_computersHand.GetNumCards(); i++)
+			//				{
+			//					if (m_computersHand.GetCard(i).color == m_topCard.color)
+			//					{
+			//						m_discardPile.AddCard(m_computersHand.GetCard(i));
+			//						m_computersHand.RemoveCard(i);
+			//						i--;
+			//					}
+			//				}
+			//			}
+			//			else if (m_topCard.type == TRADE_HANDS)
+			//			{
+			//				CardHand temp = m_playersHand;
+			//				m_playersHand = m_computersHand;
+			//				m_computersHand = temp;
+			//			}
+			//			else if (m_topCard.type == SKIP || m_topCard.type == REVERSE)
+			//			{
+			//				m_skip = true;
+			//			}
+			//			else if (m_topCard.type == HIT_TWO)
+			//			{
+			//				m_hit2 = true;
+			//			}
+			//			
+			//			
+
+			//			m_discardPile.AddCard(m_topCard);
+			//			played = true;
+
+
+			//			break;
+			//			
+			//		}
+			//		
+			//	}
+
+			//	if (!played)
+			//	{
+			//		for (int i = 0; i < m_computersHand.GetNumCards(); i++)
+			//		{
+			//			if (m_computersHand.GetCard(i).type == WILD || 
+			//				m_computersHand.GetCard(i).type == WILD_ALLHIT ||
+			//				m_computersHand.GetCard(i).type == WILD_HITFIRE)
+			//			{
+			//				m_topCard = m_computersHand.GetCard(i);
+			//				if (m_topCard.type == WILD_ALLHIT)
+			//				{
+			//					m_allHit = true;
+			//				}
+			//				else if (m_topCard.type == WILD_HITFIRE)
+			//				{
+			//					m_hitFire = true;
+			//				}
+			//				m_discardPile.AddCard(m_topCard);
+			//				m_computersHand.RemoveCard(i);
+			//				m_topCard.color = rand()%4;
+			//				played = true;
+			//				break;
+			//			}
+			//		}
+			//		if (!played)
+			//		{
+			//			int num = numCards = HitLauncher();
+			//			for (int i = 0; i < num; i++)
+			//			{
+			//				Card temp = m_deck.GetCardFromDeck();
+			//				//m_cardParticles.AddCard(temp.id);
+			//				m_computersHand.AddCard(temp);
+			//			}
+			//		}
+			//		//	m_computersHand.AddCard(m_deck.GetCardFromDeck());
+			//	}
+			//}
